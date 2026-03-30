@@ -1,0 +1,11 @@
+spring:
+  application:
+    name: booking-service
+
+  datasource:
+    url: jdbc:postgresql://localhost:5432/bookings_db
+    username: postgres
+    password: postgres
+
+server:
+  port: 0
