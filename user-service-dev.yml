@@ -1,0 +1,22 @@
+server:
+  port: 8082
+
+spring:
+  datasource:
+    url: jdbc:postgresql://localhost:5432/user_dev
+#    username: postgres
+#    password: 1234
+    username: ${DB_USERNAME}
+    password: ${DB_PASSWORD}
+
+  jpa:
+    hibernate:
+      ddl-auto: update
+
+  mail:
+    host: smtp.mailtrap.io
+    port: 2525
+#    username: dev_user
+#    password: dev_pass
+    username: ${MAIL_USERNAME}
+    password: ${MAIL_PASSWORD}
