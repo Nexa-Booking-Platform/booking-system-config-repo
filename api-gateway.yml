@@ -11,22 +11,22 @@ spring:
         - id: user-service
           uri: lb://user-service
           predicates:
-            - Path=/users/**
+            - Path=/api/users/**
 
         - id: booking-service
           uri: lb://booking-service
           predicates:
-            - Path=/bookings/**
+            - Path=/api/bookings/**
 
         - id: payment-service
           uri: lb://payment-service
           predicates:
-            - Path=/payments/**
+            - Path=/api/payments/**
 
         - id: notification-service
           uri: lb://notification-service
           predicates:
-            - Path=/notifications/**
+            - Path=/api/notifications/**
 
 eureka:
   client:
